@@ -2,6 +2,12 @@ plugins {
     id("awesome.androidapp.plugin")
 }
 
+ android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+
 dependencies {
     implementation(project(":model:post-cart"))
     implementation(project(":model:search-cart"))
