@@ -14,8 +14,8 @@
 
     <issue
         id="MissingClass"
-        message="Class referenced in the manifest, `com.awesome.app.Activity301_2`, was not found in the project or the libraries"
-        errorLine1="            android:name=&quot;.Activity301_2&quot;"
+        message="Class referenced in the manifest, `com.awesome.app.Activity182_2`, was not found in the project or the libraries"
+        errorLine1="            android:name=&quot;.Activity182_2&quot;"
         errorLine2="                          ~~~~~~~~~~~~~~">
         <location
             file="src/main/AndroidManifest.xml"
