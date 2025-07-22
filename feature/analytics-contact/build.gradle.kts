@@ -3,10 +3,13 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":core:login"))
+    implementation(project(":core:profile"))
     implementation(project(":core:push"))
-    implementation(project(":core:contact"))
-    implementation(project(":core:map"))
+    implementation(project(":core:timer"))
+    implementation(project(":core:share"))
+    implementation(project(":core:network"))
+    implementation(project(":core:alarm"))
+    implementation(project(":core:comment"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)

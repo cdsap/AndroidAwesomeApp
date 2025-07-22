@@ -3,12 +3,8 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":core:identity"))
-    implementation(project(":core:push-contact"))
-    implementation(project(":core:photo"))
-    implementation(project(":core:media"))
-    implementation(project(":core:checkout-contact"))
-    implementation(project(":core:status"))
+    implementation(project(":core:message"))
+    implementation(project(":core:metric"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)

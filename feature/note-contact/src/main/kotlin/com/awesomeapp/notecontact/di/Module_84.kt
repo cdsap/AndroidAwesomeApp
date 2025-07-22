@@ -10,8 +10,9 @@ import com.awesomeapp.notecontact.Activity84_2
 import com.awesomeapp.notecontact.Activity84_3
 import com.awesomeapp.notecontact.Fragment84_4
 import com.awesomeapp.notecontact.Repository84_5
-import com.awesomeapp.task.Api28_6
+import com.awesomeapp.setting.Api20_6
 import com.awesomeapp.search.Api12_6
+import com.awesomeapp.timer.Api32_6
 import com.awesomeapp.notecontact.Api84_6
 
 @Module
@@ -20,11 +21,13 @@ object Module_84 {
     @Provides
     @Singleton
     fun provideRepository84_5(
-        api0: Api28_6 = Api28_6(),
-        api1: Api12_6 = Api12_6()
+        api0: Api20_6 = Api20_6(),
+        api1: Api12_6 = Api12_6(),
+        api2: Api32_6 = Api32_6()
     ): Repository84_5 {
         return Repository84_5(api0, 
-        api1)
+        api1, 
+        api2)
     }
 
     @Provides

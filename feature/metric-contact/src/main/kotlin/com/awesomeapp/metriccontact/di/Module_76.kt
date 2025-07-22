@@ -10,13 +10,10 @@ import com.awesomeapp.metriccontact.Activity76_2
 import com.awesomeapp.metriccontact.Activity76_3
 import com.awesomeapp.metriccontact.Fragment76_4
 import com.awesomeapp.metriccontact.Repository76_5
-import com.awesomeapp.video.Api44_6
 import com.awesomeapp.profile.Api8_6
-import com.awesomeapp.forecast.Api40_6
-import com.awesomeapp.setting.Api20_6
-import com.awesomeapp.identity.Api4_6
 import com.awesomeapp.timer.Api32_6
-import com.awesomeapp.search.Api12_6
+import com.awesomeapp.report.Api24_6
+import com.awesomeapp.setting.Api20_6
 import com.awesomeapp.metriccontact.Api76_6
 
 @Module
@@ -25,21 +22,15 @@ object Module_76 {
     @Provides
     @Singleton
     fun provideRepository76_5(
-        api0: Api44_6 = Api44_6(),
-        api1: Api8_6 = Api8_6(),
-        api2: Api40_6 = Api40_6(),
-        api3: Api20_6 = Api20_6(),
-        api4: Api4_6 = Api4_6(),
-        api5: Api32_6 = Api32_6(),
-        api6: Api12_6 = Api12_6()
+        api0: Api8_6 = Api8_6(),
+        api1: Api32_6 = Api32_6(),
+        api2: Api24_6 = Api24_6(),
+        api3: Api20_6 = Api20_6()
     ): Repository76_5 {
         return Repository76_5(api0, 
         api1, 
         api2, 
-        api3, 
-        api4, 
-        api5, 
-        api6)
+        api3)
     }
 
     @Provides

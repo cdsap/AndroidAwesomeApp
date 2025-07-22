@@ -7,7 +7,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
         <activity
-            android:name=".Activity301_2"
+            android:name=".Activity182_2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

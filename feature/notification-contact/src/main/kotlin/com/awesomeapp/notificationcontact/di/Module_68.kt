@@ -10,15 +10,13 @@ import com.awesomeapp.notificationcontact.Activity68_2
 import com.awesomeapp.notificationcontact.Activity68_3
 import com.awesomeapp.notificationcontact.Fragment68_4
 import com.awesomeapp.notificationcontact.Repository68_5
-import com.awesomeapp.video.Api44_6
-import com.awesomeapp.search.Api12_6
-import com.awesomeapp.logincontact.Api52_6
-import com.awesomeapp.audio.Api48_6
-import com.awesomeapp.setting.Api20_6
-import com.awesomeapp.task.Api28_6
-import com.awesomeapp.timer.Api32_6
-import com.awesomeapp.report.Api24_6
+import com.awesomeapp.identity.Api4_6
 import com.awesomeapp.profile.Api8_6
+import com.awesomeapp.task.Api28_6
+import com.awesomeapp.report.Api24_6
+import com.awesomeapp.timer.Api32_6
+import com.awesomeapp.search.Api12_6
+import com.awesomeapp.setting.Api20_6
 import com.awesomeapp.notificationcontact.Api68_6
 
 @Module
@@ -27,15 +25,13 @@ object Module_68 {
     @Provides
     @Singleton
     fun provideRepository68_5(
-        api0: Api44_6 = Api44_6(),
-        api1: Api12_6 = Api12_6(),
-        api2: Api52_6 = Api52_6(),
-        api3: Api48_6 = Api48_6(),
-        api4: Api20_6 = Api20_6(),
-        api5: Api28_6 = Api28_6(),
-        api6: Api32_6 = Api32_6(),
-        api7: Api24_6 = Api24_6(),
-        api8: Api8_6 = Api8_6()
+        api0: Api4_6 = Api4_6(),
+        api1: Api8_6 = Api8_6(),
+        api2: Api28_6 = Api28_6(),
+        api3: Api24_6 = Api24_6(),
+        api4: Api32_6 = Api32_6(),
+        api5: Api12_6 = Api12_6(),
+        api6: Api20_6 = Api20_6()
     ): Repository68_5 {
         return Repository68_5(api0, 
         api1, 
@@ -43,9 +39,7 @@ object Module_68 {
         api3, 
         api4, 
         api5, 
-        api6, 
-        api7, 
-        api8)
+        api6)
     }
 
     @Provides

@@ -10,11 +10,11 @@ import com.awesomeapp.synccontact.Activity64_2
 import com.awesomeapp.synccontact.Activity64_3
 import com.awesomeapp.synccontact.Fragment64_4
 import com.awesomeapp.synccontact.Repository64_5
+import com.awesomeapp.identity.Api4_6
+import com.awesomeapp.search.Api12_6
+import com.awesomeapp.share.Api16_6
 import com.awesomeapp.task.Api28_6
-import com.awesomeapp.timer.Api32_6
 import com.awesomeapp.profile.Api8_6
-import com.awesomeapp.report.Api24_6
-import com.awesomeapp.forecast.Api40_6
 import com.awesomeapp.synccontact.Api64_6
 
 @Module
@@ -23,11 +23,11 @@ object Module_64 {
     @Provides
     @Singleton
     fun provideRepository64_5(
-        api0: Api28_6 = Api28_6(),
-        api1: Api32_6 = Api32_6(),
-        api2: Api8_6 = Api8_6(),
-        api3: Api24_6 = Api24_6(),
-        api4: Api40_6 = Api40_6()
+        api0: Api4_6 = Api4_6(),
+        api1: Api12_6 = Api12_6(),
+        api2: Api16_6 = Api16_6(),
+        api3: Api28_6 = Api28_6(),
+        api4: Api8_6 = Api8_6()
     ): Repository64_5 {
         return Repository64_5(api0, 
         api1, 

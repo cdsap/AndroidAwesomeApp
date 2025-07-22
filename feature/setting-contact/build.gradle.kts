@@ -3,10 +3,17 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":core:article"))
-    implementation(project(":core:checkout-contact"))
-    implementation(project(":core:file"))
+    implementation(project(":core:login"))
+    implementation(project(":core:sync"))
+    implementation(project(":core:notification"))
     implementation(project(":core:analytics"))
+    implementation(project(":core:feed"))
+    implementation(project(":core:calendar"))
+    implementation(project(":core:log"))
+    implementation(project(":core:report"))
+    implementation(project(":core:event"))
+    implementation(project(":core:post"))
+    implementation(project(":core:search"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)

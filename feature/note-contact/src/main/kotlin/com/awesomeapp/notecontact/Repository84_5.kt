@@ -7,20 +7,23 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import javax.inject.Inject
 import javax.inject.Singleton
-import com.awesomeapp.task.Api28_6
+import com.awesomeapp.setting.Api20_6
 import com.awesomeapp.search.Api12_6
+import com.awesomeapp.timer.Api32_6
 
 
 @Singleton
 class Repository84_5 @Inject constructor(
-    private val api0: Api28_6,
-    private val api1: Api12_6
+    private val api0: Api20_6,
+    private val api1: Api12_6,
+    private val api2: Api32_6
 ) {
     suspend fun getData(): String = withContext(Dispatchers.IO) {
         coroutineScope {
     val apis = listOf<suspend () -> String>(
         { api0.fetchData() },
-        { api1.fetchData() }
+        { api1.fetchData() },
+        { api2.fetchData() }
     )
     val results = apis.map { fetcher ->
         async { fetcher() }

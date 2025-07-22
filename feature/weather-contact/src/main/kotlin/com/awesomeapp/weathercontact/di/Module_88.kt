@@ -10,8 +10,9 @@ import com.awesomeapp.weathercontact.Activity88_2
 import com.awesomeapp.weathercontact.Activity88_3
 import com.awesomeapp.weathercontact.Fragment88_4
 import com.awesomeapp.weathercontact.Repository88_5
-import com.awesomeapp.task.Api28_6
+import com.awesomeapp.identity.Api4_6
 import com.awesomeapp.search.Api12_6
+import com.awesomeapp.setting.Api20_6
 import com.awesomeapp.weathercontact.Api88_6
 
 @Module
@@ -20,11 +21,13 @@ object Module_88 {
     @Provides
     @Singleton
     fun provideRepository88_5(
-        api0: Api28_6 = Api28_6(),
-        api1: Api12_6 = Api12_6()
+        api0: Api4_6 = Api4_6(),
+        api1: Api12_6 = Api12_6(),
+        api2: Api20_6 = Api20_6()
     ): Repository88_5 {
         return Repository88_5(api0, 
-        api1)
+        api1, 
+        api2)
     }
 
     @Provides
